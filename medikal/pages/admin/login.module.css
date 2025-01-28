@@ -1,0 +1,64 @@
+/* login.css */
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9; /* Arka plan rengi */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    background-color: #fff; /* Formun arka plan rengi */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1 {
+    color: #2450a6; /* Başlık rengi */
+    margin-bottom: 20px;
+}
+
+
+.label {
+    display: block;
+    margin-bottom: 8px;
+    color: #192959; /* Label metin rengi */
+}
+
+.input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #9f96d9; /* Input kenar rengi */
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input:focus {
+    border-color: #2450a6; /* Input odaklanınca kenar rengi */
+}
+
+.button {
+    background-color: #2450a6; /* Buton arka plan rengi */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #192959; /* Buton üzerine gelince renk */
+}

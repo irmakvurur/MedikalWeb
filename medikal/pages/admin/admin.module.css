@@ -1,0 +1,120 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.productlist {
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Ürünler arasındaki boşluk */
+}
+
+.productitem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.productitem:hover {
+  transform: scale(1.02); /* Hover animasyonu */
+}
+
+.productimage img {
+  width: 100px; /* Daha küçük resim boyutu */
+  height: auto;
+  border-radius: 4px;
+  margin-right: 20px; /* Resim ile metin arasındaki boşluk */
+}
+
+.productinfo {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.productinfo h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.productinfo p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.productcategory {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+.productactions {
+  display: flex;
+  align-items: center;
+  gap: 10px; /* Butonlar arasında boşluk */
+}
+
+.button {
+  padding: 10px 15px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #005bb5; /* Hover rengi */
+}
+
+@media (max-width: 768px) {
+  .productitem {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .productimage img {
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 10px;
+  }
+
+  .productactions {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+.formContainer {
+  margin: 80px auto;
+  max-width: 600px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Her form elemanı arasında boşluk */
+}
+
+.textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  resize: none;
+}
+
+
+
